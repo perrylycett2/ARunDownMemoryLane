@@ -1,0 +1,12 @@
+{
+  "name": "a-run-down-memory-lane",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A small browser runner about collecting memories while avoiding potholes.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "serve": "python3 -m http.server 8080"
+  },
+  "devDependencies": {}
+}
