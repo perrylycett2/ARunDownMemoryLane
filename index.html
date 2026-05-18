@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A Run Down Memory Lane</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <main class="shell" aria-labelledby="game-title">
+      <section class="hero-panel">
+        <p class="eyebrow">Arcade runner</p>
+        <h1 id="game-title">A Run Down Memory Lane</h1>
+        <p class="lede">
+          Dash through a fading neighborhood, gather glowing memories, and jump the potholes before nostalgia slips away.
+        </p>
+        <div class="controls-card" aria-label="Controls">
+          <strong>Controls</strong>
+          <span>Space / ↑ to jump</span>
+          <span>P to pause</span>
+          <span>R to restart</span>
+        </div>
+      </section>
+
+      <section class="game-card" aria-label="Game area">
+        <div class="hud" aria-live="polite">
+          <div><span>Score</span><strong id="score">0</strong></div>
+          <div><span>Memories</span><strong id="memories">0</strong></div>
+          <div><span>Best</span><strong id="best">0</strong></div>
+        </div>
+        <canvas id="game" width="960" height="540" aria-label="A Run Down Memory Lane game canvas"></canvas>
+        <div id="overlay" class="overlay">
+          <h2 id="overlay-title">Ready?</h2>
+          <p id="overlay-copy">Press Space or tap Start to begin your run.</p>
+          <button id="start-button" type="button">Start run</button>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="src/game.js"></script>
+  </body>
+</html>
